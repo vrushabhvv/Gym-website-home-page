@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+        /* reset css */
+        * {
+            /* box-sizing: border-box; */
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        body {
+            color: white;
+            margin: 0px;
+            border: 0px;
+            background: url('img1/thomas-yohei-BAlBUJb-SXQ-unsplash\ \(1\).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -175px;
+            /*x and y axis*/
+        }
+
+        .left {
+            /* border: 4px solid gray; */
+            margin: 4px;
+            display: inline-block;
+            padding: 2px;
+            position: absolute;
+            left: 40px;
+            top: 30px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 18px;
+            font-size: 23px;
+        }
+
+        .mid {
+            display: block;
+            /* border: 4px solid gray; */
+            /* display: inline-block; */
+            padding: 2px;
+            width: 41%;
+            margin: 37px auto;
+
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+        }
+
+        .right {
+            /* border: 4px solid gray; */
+            margin: 30px;
+            display: inline-block;
+            padding: 2px;
+            position: absolute;
+            right: 40px;
+            top: 2px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            text-decoration: none;
+            padding: 4px;
+        }
+
+        .navbar li a {
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 7px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+
+        }
+
+        .btn {
+            margin: 9px;
+            padding: 7px;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: gray;
+            background-color: rgb(114, 52, 52);
+        }
+
+        .container {
+            border: 2px solid green;
+            width: 33%;
+            padding: 17px;
+            margin: 78px 25px;
+            border-radius: 23px;
+        }
+
+        .form-group input {
+            border: 3px solid gray;
+            margin: 4px 5px;
+            display: block;
+            width: 33%;
+            padding: 4px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .container div button {
+            border: 5px solid gray;
+            margin: 11px 9px;
+            display: inline-block;
+            width: 33%;
+            padding: 6px;
+            border-radius: 26px;
+            text-align: center;
+            font-size: 23px;
+            background: cornflowerblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="img2/pexels-pixabay-39671.jpg" alt="">
+        <div>My Health</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">Contact Us </button>
+        <button class="btn">Email Us</button>
+    </div>
+    <div class="container">
+        <h1>Join the best gym of delhi</h1>
+        <form action="action.php">
+            <!--action is related to backend just to demonstrate we have wriiten like this action.php is backend form name -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="btn"></div>
+            <div>
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn">Sumbit
+                </button>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
